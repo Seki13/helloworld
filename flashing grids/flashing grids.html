@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS task flashing s</title>
+        <style>
+            .div
+            {
+                padding: 13%;
+                border-radius: 3%;
+                margin: 1%;
+                float: left;
+                background-color: darkorange;
+            }
+            
+            
+            .main
+            {
+                width: 80%;
+                padding-bottom: 90%;
+                border-style:dashed;
+            }
+            button
+            {
+                width: 82%;
+                padding: 3% 0% 3% 0%;
+                margin: 1%;
+                background-color: white;
+                border-color: darkorange;
+                color: darkorange;
+            }
+            button:hover{
+                background-color: darkorange;
+                color: white;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="main">
+            <div class="div" id="div1"></div>
+            <div class="div" id="div2"></div>
+            <div class="div" id="div3"></div>
+            <div class="div" id="div4"></div>
+            <div class="div" id="div5"></div>
+            <div class="div" id="div6"></div>
+            <div class="div" id="div7"></div>
+            <div class="div" id="div8"></div>
+            <div class="div" id="div9"></div>
+            <button id="start">Start flashing</button>
+            <button id="stop">Stop</button>
+        </div>
+        
+
+        
+        <script>
+            var intervalTrigger;
+            
+ 
+             document.getElementById("start").addEventListener("click",function(){            
+                intervalTrigger = setInterval(function colorChange(){ 
+                   
+                    
+                
+                function getColor(){
+                    r=Math.floor(Math.random()*256);
+                    g=Math.floor(Math.random()*256);
+                    b=Math.floor(Math.random()*256);
+                    return "rgb("+r+","+g+","+b+")";
+                }
+                
+                
+            var getId = Array("div1","div2","div3","div4","div5","div6","div7","div8","div9");
+            getId.sort(
+                function(){
+                    return 0.5-Math.random()
+                }
+            )
+                   document.getElementsByClassName("div").style.enableBackground = "darkorange";//Reset blackground color
+                document.getElementById(getId[0]).style.backgroundColor = getColor();
+               document.getElementById(getId[1]).style.backgroundColor = getColor();
+                document.getElementById(getId[2]).style.backgroundColor = getColor();
+                
+
+            } ,1000)}
+           );
+            document.getElementById("stop").addEventListener("click",function(){
+                clearInterval(intervalTrigger);
+            });
+            
+            
+            
+            
+            
+        </script>
+    </body>
+</html>
