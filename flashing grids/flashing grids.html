@@ -4,7 +4,7 @@
     <head>
         <title>JS task flashing s</title>
         <style>
-            .div
+            .grid
             {
                 padding: 13%;
                 border-radius: 3%;
@@ -38,15 +38,15 @@
     
     <body>
         <div class="main">
-            <div class="div" id="div1"></div>
-            <div class="div" id="div2"></div>
-            <div class="div" id="div3"></div>
-            <div class="div" id="div4"></div>
-            <div class="div" id="div5"></div>
-            <div class="div" id="div6"></div>
-            <div class="div" id="div7"></div>
-            <div class="div" id="div8"></div>
-            <div class="div" id="div9"></div>
+            <div class="grid" id="div1"></div>
+            <div class="grid" id="div2"></div>
+            <div class="grid" id="div3"></div>
+            <div class="grid" id="div4"></div>
+            <div class="grid" id="div5"></div>
+            <div class="grid" id="div6"></div>
+            <div class="grid" id="div7"></div>
+            <div class="grid" id="div8"></div>
+            <div class="grid" id="div9"></div>
             <button id="start">Start flashing</button>
             <button id="stop">Stop</button>
         </div>
@@ -55,6 +55,12 @@
         
         <script>
             var intervalTrigger;
+            function getColor(){
+                r=Math.floor(Math.random()*256);
+                g=Math.floor(Math.random()*256);
+                b=Math.floor(Math.random()*256);
+                return "rgb("+r+","+g+","+b+")";
+            }
             
  
              document.getElementById("start").addEventListener("click",function(){            
@@ -62,12 +68,7 @@
                    
                     
                 
-                function getColor(){
-                    r=Math.floor(Math.random()*256);
-                    g=Math.floor(Math.random()*256);
-                    b=Math.floor(Math.random()*256);
-                    return "rgb("+r+","+g+","+b+")";
-                }
+
                 
                 
             var getId = Array("div1","div2","div3","div4","div5","div6","div7","div8","div9");
@@ -76,7 +77,7 @@
                     return 0.5-Math.random()
                 }
             )
-                document.getElementsByClassName("div").style.backgroundColor = "darkorange";//Reset blackground color
+                document.getElementsByClassName("grid").style.backgroundColor = "darkorange";//Reset blackground color
                 document.getElementById(getId[0]).style.backgroundColor = getColor();
                 document.getElementById(getId[1]).style.backgroundColor = getColor();
                 document.getElementById(getId[2]).style.backgroundColor = getColor();
