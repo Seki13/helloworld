@@ -55,6 +55,13 @@
         
         <script>
             var intervalTrigger;
+            function reSet(){
+                for(var i = 0; i< 9; i++){
+                    document.getElementsByClassName("grid")[i].style.backgroundColor = "darkorange";
+                }
+
+
+            }
             function getColor(){
                 r=Math.floor(Math.random()*256);
                 g=Math.floor(Math.random()*256);
@@ -64,29 +71,32 @@
             
  
              document.getElementById("start").addEventListener("click",function(){            
-                intervalTrigger = setInterval(function colorChange(){ 
-                   
-                    
-                
+                intervalTrigger = setInterval(function colorChange(){
 
-                
-                
+
+
+
+
+
             var getId = Array("div1","div2","div3","div4","div5","div6","div7","div8","div9");
             getId.sort(
                 function(){
                     return 0.5-Math.random()
                 }
-            )
-                document.getElementsByClassName("grid").style.backgroundColor = "darkorange";//Reset blackground color
-                document.getElementById(getId[0]).style.backgroundColor = getColor();
-                document.getElementById(getId[1]).style.backgroundColor = getColor();
-                document.getElementById(getId[2]).style.backgroundColor = getColor();
+            );
+
+            reSet();
+
+                    document.getElementById(getId[0]).style.backgroundColor = getColor();
+                    document.getElementById(getId[1]).style.backgroundColor = getColor();
+                    document.getElementById(getId[2]).style.backgroundColor = getColor();
                 
 
             } ,1000)}
            );
             document.getElementById("stop").addEventListener("click",function(){
                 clearInterval(intervalTrigger);
+                reSet()
             });
             
             
