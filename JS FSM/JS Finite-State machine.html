@@ -3,14 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>JS FSM</title>
+    <style>
+        #div{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
+<div id="div"></div>
 <script type="javascript">
-    var btnFSM=new StateMachine(){
+
+    var StateMachine = function () {
+        this.currentState = State.red;
+        _this = this;
+        //Can't set color in constructor
+        var changeColor = document.getElementById("div");
+        changeColor.style.backgroundColor = "red";
+
+        changeColor.onclick = function () {
+            _this.currentState.press.call(_this);
+        }
 
     }
 
-    var state={};
+    var State = {
+        red:{
+            press : function () {
+                this.changeColor.style.backgroundColor = "red";
+                this.currentState = State.green;
+            }
+        }
+        green:{
+            press : function () {
+                this.changeColor.style.backgroundColor = "green";
+                this.currentState = State.red;
+            }
+        }
+
+
+    }
+
+    var start = new StateMachine();
+    start();
 </script>
 </body>
 </html>
