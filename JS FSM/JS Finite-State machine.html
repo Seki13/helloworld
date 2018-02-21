@@ -8,33 +8,39 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
+            background-color: red;
         }
     </style>
 </head>
 <body>
 <div id="div"></div>
-<script type="javascript">
+
+
+<script>
 
     var StateMachine = function () {
+        //Default state.初始化
         this.currentState = State.red;
+        //Save reference to _this.将当前this作用域引用至DOM的范围
         _this = this;
-        //Can't set color in constructor
-        var changeColor = document.getElementById("div");
-        changeColor.style.backgroundColor = "red";
+        //Set color in constructor.绑定DOM对象
+        this.changeColor = document.getElementById("div");
 
-        changeColor.onclick = function () {
+        //
+        this.changeColor.onclick = function () {
             _this.currentState.press.call(_this);
         }
 
     }
 
+        //两种State
     var State = {
         red:{
-            press : function () {
+           press : function () {
                 this.changeColor.style.backgroundColor = "red";
                 this.currentState = State.green;
             }
-        }
+        },
         green:{
             press : function () {
                 this.changeColor.style.backgroundColor = "green";
@@ -45,8 +51,9 @@
 
     }
 
-    var start = new StateMachine();
-    start();
+    //Constructor实例化
+var a = new StateMachine();
+    a();
 </script>
 </body>
 </html>
