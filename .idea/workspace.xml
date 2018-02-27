@@ -20,7 +20,7 @@
       <file leaf-file-name="JS Finite-State machine.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JS FSM/JS Finite-State machine.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
+            <state relative-caret-position="30">
               <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
@@ -31,10 +31,20 @@
         <entry file="file://$PROJECT_DIR$/Snake/Snake.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="42" column="60" lean-forward="false" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+              <caret line="42" column="47" lean-forward="false" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flashing grids.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flashing grids/flashing grids.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="750">
+              <caret line="69" column="13" lean-forward="false" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,12 +146,12 @@
       <workItem from="1519097855758" duration="2702000" />
       <workItem from="1519179732222" duration="1256000" />
       <workItem from="1519647439030" duration="3330000" />
-      <workItem from="1519697784295" duration="904000" />
+      <workItem from="1519697784295" duration="2185000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16661000" />
+    <option name="totallyTimeSpent" value="17942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -287,17 +297,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flashing grids/JS Finite-State machine.html" />
-    <entry file="file://$PROJECT_DIR$/flashing grids/flashing grids.html">
+    <entry file="file://$PROJECT_DIR$/JS FSM/JS Finite-State machine.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="69" column="13" lean-forward="false" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+        <state relative-caret-position="30">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JS FSM/JS Finite-State machine.html">
+    <entry file="file://$PROJECT_DIR$/flashing grids/flashing grids.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="750">
+          <caret line="69" column="13" lean-forward="false" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -305,7 +316,7 @@
     <entry file="file://$PROJECT_DIR$/Snake/Snake.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="42" column="60" lean-forward="false" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+          <caret line="42" column="47" lean-forward="false" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
