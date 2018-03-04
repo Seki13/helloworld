@@ -4,14 +4,14 @@
     </head>
     <body>
         <script>
-                let hashTable = {};
-                let arr = [1,1,2,3,4,5,6,7,7];
-                let arr2 = []
+                let hashTable = {};//用于判断是否重复值的外包函数
+                let arr = [1,1,2,3,4,5,6,7,7];//待检测的数组
+                let arr2 = [];//返回的数组
 
                     for(let i=0;i<arr.length;i++){
                             if(!hashTable[arr[i]]){
-                                hashTable[arr[i]]=true;
-                                arr2.push(arr[i]);
+                                hashTable[arr[i]]=true;//第一次遇到的数为true，第二次遇到将不会进入作用域
+                                arr2.push(arr[i]);//将他推入新数组
                             }
                     }
                     console.log(arr2);
